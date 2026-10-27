@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/industry-ac0a8d54-d33e-499c-a60a-022da150d9a1/styles.css">
+<script src="_ds/industry-ac0a8d54-d33e-499c-a60a-022da150d9a1/_ds_bundle.js"></script>
+<title>Pau Guillamat · Living Nematic Matter</title>
+<style>
+  html{scroll-behavior:smooth; scroll-padding-top:72px;}
+  body{margin:0; background:var(--color-bg);}
+  a{color:var(--color-accent-700); text-decoration:none;}
+  a:hover{color:var(--color-text); text-decoration:underline;}
+  .hero a{color:#fff;}
+</style>
+</helmet>
+<div style="min-height:100vh; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); font-size:16px; line-height:1.6;">
+
+<nav style="position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--color-divider);">
+  <div style="max-width:1200px; margin:0 auto; padding:12px 24px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+    <a href="#top" style="font-family:var(--font-heading); font-weight:600; font-size:20px; color:var(--color-text); margin-right:auto; text-decoration:none;">Pau Guillamat</a>
+    <div style="display:flex; gap:18px; flex-wrap:wrap; font-size:14px;">
+      <a href="#about" style="color:var(--color-text);">About</a>
+      <a href="#research" style="color:var(--color-text);">Research</a>
+      <a href="#gallery" style="color:var(--color-text);">Gallery</a>
+      <a href="#publications" style="color:var(--color-text);">Publications</a>
+      <a href="#career" style="color:var(--color-text);">Career</a>
+      <a href="#contact" style="color:var(--color-text);">Contact</a>
+    </div>
+    <a href="#join" class="btn btn-primary" style="text-decoration:none;">Join the lab</a>
+  </div>
+</nav>
+
+<header id="top" class="hero" style="background:var(--color-accent-900); color:#fff;">
+  <div style="max-width:1200px; margin:0 auto; padding:72px 24px 80px; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:56px; align-items:center;">
+    <div>
+      <p style="margin:0 0 18px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-300);">Living Nematic Matter · SOCSAM · University of Barcelona</p>
+      <h1 style="margin:0 0 14px; font-family:var(--font-heading); font-weight:600; font-size:clamp(48px, 7vw, 84px); line-height:.95; letter-spacing:-.02em; color:#fff;">Pau Guillamat</h1>
+      <p style="margin:0 0 28px; font-family:var(--font-heading); font-size:20px; line-height:1.3; color:var(--color-accent-200);">Tenure-track Lecturer, Materials Science and Physical Chemistry<br>Lead, Living Nematic Matter line · SOCSAM · IN2UB</p>
+      <p style="margin:0 0 34px; font-size:clamp(20px, 2.2vw, 26px); line-height:1.4; max-width:30ch; color:#fff; text-wrap:pretty;">We study living materials that align like nematic liquid crystals, and use that alignment to control how they flow, generate force, and change shape and fate.</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="#research" class="btn btn-primary" style="text-decoration:none; padding:11px 20px; font-size:16px;">Explore the research</a>
+        <a href="#publications" class="btn" style="text-decoration:none; padding:11px 20px; font-size:16px; color:#fff; border-color:var(--color-accent-500);" style-hover="background:var(--color-accent-800);">Publications</a>
+      </div>
+    </div>
+    <figure style="margin:0;">
+      <div class="blueprint" style="border-color:var(--color-accent-700); padding:8px; color:var(--color-accent-400);">
+        <i class="corner tl" style="color:var(--color-accent-400);"></i><i class="corner tr" style="color:var(--color-accent-400);"></i><i class="corner bl" style="color:var(--color-accent-400);"></i><i class="corner br" style="color:var(--color-accent-400);"></i>
+        <video src="assets/media/4def.mp4" data-auto="1" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; background:#000;"></video>
+      </div>
+      <figcaption style="margin-top:14px; display:grid; grid-template-columns:auto 1fr; gap:14px; font-size:14px; line-height:1.5; color:var(--color-accent-200);">
+        <span style="font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-accent-300); padding-top:2px;">Science 2026</span>
+        <span>A flat cell monolayer carrying four programmed defects folds into a three-dimensional shape. <a href="https://doi.org/10.1126/science.adz9174" style="color:#fff; text-decoration:underline;">Read the paper</a></span>
+      </figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="join" style="background:var(--color-accent-100); border-bottom:1px solid var(--color-divider);">
+  <div style="max-width:1200px; margin:0 auto; padding:28px 24px; display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
+    <span class="tag tag-accent" style="font-size:12px; letter-spacing:.1em; text-transform:uppercase;">Open positions</span>
+    <div style="flex:1 1 420px;">
+      <p style="margin:0 0 2px; font-family:var(--font-heading); font-weight:600; font-size:24px; line-height:1.2;">Open to applications from prospective PhD students and postdocs.</p>
+      <p style="margin:0; font-size:15px; color:var(--color-neutral-700);">Happy to co-write fellowship proposals with strong candidates (MSCA, Beatriu de Pinós, la Caixa, FI-AGAUR or equivalent). Send a CV and a short note on what interests you.</p>
+    </div>
+    <a href="mailto:pauguillamat@ub.edu?subject=Joining%20Living%20Nematic%20Matter" class="btn btn-primary" style="text-decoration:none; padding:11px 20px; font-size:16px;">Write to pauguillamat@ub.edu</a>
+  </div>
+</section>
+
+<main style="max-width:1200px; margin:0 auto; padding:0 24px;">
+
+<section id="about" style="padding:88px 0 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:56px;">
+  <div>
+    <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">01 · About</p>
+    <h2 style="margin:0 0 22px; font-family:var(--font-heading); font-weight:600; font-size:clamp(32px, 4vw, 44px); line-height:1.05;">A materials chemist between soft matter physics and cell biology</h2>
+    <p style="margin:0 0 14px; text-wrap:pretty;">Pau Guillamat studied chemistry and applied materials chemistry at the University of Barcelona and completed his PhD in Nanoscience and Nanotechnology there in 2017 (excellent cum laude) with Jordi Ignés-Mullol and Francesc Sagués. His thesis showed how passive liquid crystals and structured interfaces steer the flows of cytoskeletal active gels (PNAS, Nature Communications, Science Advances).</p>
+    <p style="margin:0 0 14px; text-wrap:pretty;">As an HFSP cross-disciplinary fellow with Aurélien Roux at the University of Geneva (2017–2021), he showed that integer topological defects organise the stresses that drive tissue morphogenesis (Nature Materials, 2022). With a Marie Skłodowska-Curie fellowship in Xavier Trepat’s lab at IBEC, he developed substrates that guide cellular nematic order into shape-programmable living surfaces (Science, 2026).</p>
+    <p style="margin:0; text-wrap:pretty;">He now teaches at the University of Barcelona and leads the Living Nematic Matter line of SOCSAM, within the Institute of Nanoscience and Nanotechnology (IN2UB).</p>
+  </div>
+  <div>
+    <p style="margin:0 0 14px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">Expertise</p>
+    <ol style="list-style:none; margin:0; padding:0; border-top:1px solid var(--color-divider);">
+      <sc-for list="{{ expertise }}" as="e" hint-placeholder-count="7">
+        <li style="display:grid; grid-template-columns:44px 1fr; align-items:baseline; padding:14px 0; border-bottom:1px solid var(--color-divider);">
+          <span style="font-size:12px; color:var(--color-accent-700);">{{ e.n }}</span>
+          <span style="font-family:var(--font-heading); font-size:22px; line-height:1.2;">{{ e.label }}</span>
+        </li>
+      </sc-for>
+    </ol>
+  </div>
+</section>
+
+<section id="research" style="padding:96px 0 0;">
+  <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">02 · Research line</p>
+  <h2 style="margin:0 0 28px; font-family:var(--font-heading); font-weight:600; font-size:clamp(32px, 4vw, 44px); line-height:1.05;">Living Nematic Matter</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; margin-bottom:48px;">
+    <p style="margin:0; font-size:19px; line-height:1.6; text-wrap:pretty;">Active matter is made of units that burn chemical energy to do mechanical work. Put enough of them together, whether motor-driven filaments or cells in a monolayer, and they self-organise: they flow, they align, and they develop topological defects in that alignment. The line asks whether those defects can be controlled, and what happens mechanically and biologically when they are.</p>
+    <p style="margin:0; font-size:19px; line-height:1.6; text-wrap:pretty;">We can now prescribe orientation in living nematics, a milestone for the field. Prescribed orientation yields reproducible patterns of active forces, which we use to reshape tissues. The aim is a set of design routes from alignment to form and fate, and the bottom-up engineering of living tissues.</p>
+  </div>
+  <figure style="margin:0 0 56px;">
+    <div class="blueprint" style="padding:6px; cursor:zoom-in;" onClick="{{ openBanner }}">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <img src="assets/media/nemacells.jpg" alt="Cell monolayer aligned like a nematic liquid crystal" style="display:block; width:100%; aspect-ratio:21/9; object-fit:cover; background:#000;">
+    </div>
+    <figcaption style="margin-top:10px; font-size:14px; color:var(--color-neutral-700);">Living nematic order: a dense cell monolayer aligns like a liquid crystal and develops topological defects.</figcaption>
+  </figure>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:28px;">
+    <sc-for list="{{ themes }}" as="t" hint-placeholder-count="3">
+      <article class="blueprint" style="padding:26px; display:flex; flex-direction:column; gap:12px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <span style="font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">{{ t.n }}</span>
+        <h3 style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:26px; line-height:1.1;">{{ t.title }}</h3>
+        <p style="margin:0; font-size:15px; line-height:1.6; color:var(--color-neutral-800); flex:1;">{{ t.body }}</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; padding-top:6px;">
+          <sc-for list="{{ t.papers }}" as="p" hint-placeholder-count="3">
+            <a href="{{ p.href }}" class="tag tag-outline" style="text-decoration:none;">{{ p.label }}</a>
+          </sc-for>
+        </div>
+      </article>
+    </sc-for>
+  </div>
+</section>
+
+<section id="gallery" style="padding:96px 0 0;">
+  <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">03 · Gallery</p>
+  <div style="display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; margin-bottom:28px;">
+    <h2 style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:clamp(32px, 4vw, 44px); line-height:1.05; max-width:20ch;">Shaping, growth and fate, guided by living nematic order</h2>
+    <div role="tablist" style="display:flex; border:1px solid var(--color-divider);">
+      <sc-for list="{{ tabs }}" as="tb" hint-placeholder-count="3">
+        <button role="tab" onClick="{{ tb.select }}" style="appearance:none; border:0; border-right:1px solid var(--color-divider); padding:10px 22px; font-family:var(--font-heading); font-weight:600; font-size:18px; cursor:pointer; background:{{ tb.bg }}; color:{{ tb.fg }};">{{ tb.label }}</button>
+      </sc-for>
+    </div>
+  </div>
+  <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:20px;">
+    <div style="padding:22px; border:1px solid var(--color-divider); background:var(--color-accent-900); color:#fff; display:flex; flex-direction:column; gap:12px; aspect-ratio:1/1;">
+      <span style="font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-300);">{{ g.paper }}</span>
+      <p style="margin:0; font-family:var(--font-heading); font-size:24px; line-height:1.2; flex:1; text-wrap:pretty;">{{ g.lede }}</p>
+      <a href="{{ g.doi }}" style="color:#fff; font-size:14px; text-decoration:underline;">{{ g.ref }}</a>
+    </div>
+    <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="5">
+      <figure style="margin:0; grid-column:{{ it.col }};">
+        <button onClick="{{ it.open }}" class="blueprint" style="appearance:none; display:block; width:100%; padding:5px; background:#fff; cursor:zoom-in; font:inherit;" style-hover="border-color:var(--color-accent);">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <sc-if value="{{ it.isVideo }}" hint-placeholder-val="{{ false }}">
+            <video src="{{ it.src }}" data-auto="1" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="display:block; width:100%; aspect-ratio:{{ it.ratio }}; object-fit:cover; background:#000;"></video>
+          </sc-if>
+          <sc-if value="{{ it.isImg }}" hint-placeholder-val="{{ true }}">
+            <img src="{{ it.src }}" alt="{{ it.cap }}" loading="lazy" style="display:block; width:100%; aspect-ratio:{{ it.ratio }}; object-fit:{{ it.fit }}; background:#fff;">
+          </sc-if>
+        </button>
+        <figcaption style="margin-top:8px; font-size:13.5px; line-height:1.45; color:var(--color-neutral-700);"><sc-if value="{{ it.isVideo }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-accent-700); margin-right:6px;">Movie</span></sc-if>{{ it.cap }}</figcaption>
+      </figure>
+    </sc-for>
+  </div>
+</section>
+
+<section id="publications" style="padding:96px 0 0;">
+  <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">04 · Publications</p>
+  <h2 style="margin:0 0 28px; font-family:var(--font-heading); font-weight:600; font-size:clamp(32px, 4vw, 44px); line-height:1.05;">Key results</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:28px; margin-bottom:28px;">
+    <sc-for list="{{ keyPapers }}" as="k" hint-placeholder-count="2">
+      <a href="{{ k.doi }}" class="blueprint" style="display:grid; grid-template-rows:auto 1fr; color:var(--color-text); text-decoration:none;" style-hover="border-color:var(--color-accent);">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <img src="{{ k.img }}" alt="" loading="lazy" style="display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#000;">
+        <div style="padding:22px 24px 24px; display:flex; flex-direction:column; gap:8px;">
+          <span style="font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">{{ k.venue }}</span>
+          <span style="font-family:var(--font-heading); font-weight:600; font-size:26px; line-height:1.15;">{{ k.title }}</span>
+          <span style="font-size:14px; color:var(--color-neutral-700);">{{ k.authors }}</span>
+          <span style="font-size:14px; color:var(--color-neutral-800);">{{ k.note }}</span>
+        </div>
+      </a>
+    </sc-for>
+  </div>
+  <div style="padding:22px 0; border-top:1px solid var(--color-divider); border-bottom:1px solid var(--color-divider); display:grid; grid-template-columns:auto 1fr; gap:24px; align-items:start; margin-bottom:64px;">
+    <span style="font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700); padding-top:4px;">Highlighted in</span>
+    <ul style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px 28px;">
+      <sc-for list="{{ press }}" as="pr" hint-placeholder-count="5">
+        <li style="font-size:14px; line-height:1.4;"><a href="{{ pr.href }}" style="font-family:var(--font-heading); font-weight:600; font-size:18px; color:var(--color-text);">{{ pr.outlet }}</a><br><span style="color:var(--color-neutral-700);">{{ pr.what }}</span></li>
+      </sc-for>
+    </ul>
+  </div>
+
+  <div style="display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; margin-bottom:18px;">
+    <h3 style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:30px;">All publications <span style="font-size:18px; color:var(--color-neutral-600); font-weight:400;">{{ pubCount }}</span></h3>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <sc-for list="{{ filters }}" as="f" hint-placeholder-count="5">
+        <button onClick="{{ f.select }}" style="appearance:none; border:1px solid {{ f.bd }}; background:{{ f.bg }}; color:{{ f.fg }}; padding:7px 14px; font-family:var(--font-body); font-size:13.5px; cursor:pointer;">{{ f.label }}</button>
+      </sc-for>
+    </div>
+  </div>
+  <ol style="list-style:none; margin:0; padding:0; border-top:1px solid var(--color-text);">
+    <sc-for list="{{ pubs }}" as="p" hint-placeholder-count="8">
+      <li style="display:grid; grid-template-columns:64px minmax(0,1fr) auto; gap:20px; padding:18px 0; border-bottom:1px solid var(--color-divider); align-items:baseline;">
+        <span style="font-family:var(--font-heading); font-size:22px; color:var(--color-accent-700);">{{ p.year }}</span>
+        <div>
+          <p style="margin:0 0 4px; font-family:var(--font-heading); font-weight:600; font-size:20px; line-height:1.25;"><a href="{{ p.href }}" style="color:var(--color-text);">{{ p.t }}</a></p>
+          <p style="margin:0 0 4px; font-size:14px; line-height:1.5; color:var(--color-neutral-700);">{{ p.a1 }}<strong style="color:var(--color-text);">P. Guillamat</strong>{{ p.a2 }}</p>
+          <p style="margin:0; font-size:14px; color:var(--color-accent-700);"><em>{{ p.v }}</em></p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px; align-items:end; font-size:13px;">
+          <span class="tag tag-neutral">{{ p.role }}</span>
+          <sc-if value="{{ p.hasOa }}" hint-placeholder-val="{{ false }}"><a href="{{ p.oa }}">Open access</a></sc-if>
+        </div>
+      </li>
+    </sc-for>
+  </ol>
+  <p style="margin:16px 0 0; font-size:14px; color:var(--color-neutral-700);">Full and up-to-date record on <a href="https://scholar.google.com/citations?user=v1GzFnMAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0002-7050-4672">ORCID</a>.</p>
+</section>
+
+<section id="career" style="padding:96px 0 0;">
+  <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">05 · Career</p>
+  <h2 style="margin:0 0 28px; font-family:var(--font-heading); font-weight:600; font-size:clamp(32px, 4vw, 44px); line-height:1.05;">Positions and funding</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px;">
+    <ol style="list-style:none; margin:0; padding:0; border-top:1px solid var(--color-text);">
+      <sc-for list="{{ positions }}" as="c" hint-placeholder-count="6">
+        <li style="display:grid; grid-template-columns:110px 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--color-divider);">
+          <span style="font-family:var(--font-heading); font-size:18px; color:var(--color-accent-700);">{{ c.when }}</span>
+          <div><p style="margin:0; font-weight:500;">{{ c.what }}</p><p style="margin:2px 0 0; font-size:14px; color:var(--color-neutral-700);">{{ c.where }}</p></div>
+        </li>
+      </sc-for>
+    </ol>
+    <div style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px; align-content:start;">
+      <sc-for list="{{ grants }}" as="gr" hint-placeholder-count="4">
+        <div class="blueprint" style="padding:18px; display:flex; flex-direction:column; gap:10px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="height:64px; background:#fff; display:grid; place-items:center; padding:6px;"><img src="{{ gr.logo }}" alt="{{ gr.funder }}" style="max-height:52px; max-width:100%; object-fit:contain;"></div>
+          <p style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:18px; line-height:1.2;">{{ gr.name }}</p>
+          <p style="margin:0; font-size:13.5px; color:var(--color-neutral-700);">{{ gr.funder }} · {{ gr.year }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<sc-if value="{{ showOutside }}" hint-placeholder-val="{{ true }}">
+<section id="outside" style="padding:96px 0 0;">
+  <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">06 · Outside the lab</p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:28px; align-items:end;">
+    <h2 style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:clamp(28px, 3.4vw, 38px); line-height:1.15; text-wrap:pretty;">In my free time I head to the mountains to climb and run, and to the coast to kitesurf.</h2>
+    <figure style="margin:0;">
+      <div class="blueprint duotone" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/media/free-mountains.jpg" alt="On a glacier in the Alps" loading="lazy" style="display:block; width:100%; aspect-ratio:3/2; object-fit:cover;"></div>
+      <figcaption style="margin-top:8px; font-size:13.5px; color:var(--color-neutral-700);">On a glacier in the Alps.</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <div class="blueprint duotone" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/media/free-kitesurf.jpg" alt="Kitesurfing in Tanzania" loading="lazy" style="display:block; width:100%; aspect-ratio:3/2; object-fit:cover;"></div>
+      <figcaption style="margin-top:8px; font-size:13.5px; color:var(--color-neutral-700);">Kitesurfing in Tanzania.</figcaption>
+    </figure>
+  </div>
+</section>
+</sc-if>
+
+<section id="contact" style="padding:96px 0 96px;">
+  <div style="background:var(--color-accent-900); color:#fff; padding:clamp(28px, 5vw, 56px); display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:40px;">
+    <div>
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-300);">Contact</p>
+      <h2 style="margin:0 0 16px; font-family:var(--font-heading); font-weight:600; font-size:clamp(30px, 4vw, 44px); line-height:1.05; color:#fff;">Interested in joining or collaborating?</h2>
+      <p style="margin:0 0 24px; color:var(--color-accent-200);">Open to applications from prospective PhD students and postdocs, and happy to co-write fellowship proposals with strong candidates.</p>
+      <a href="mailto:pauguillamat@ub.edu" class="btn btn-primary" style="text-decoration:none; padding:11px 20px; font-size:16px;">pauguillamat@ub.edu</a>
+    </div>
+    <div style="font-size:15px; line-height:1.7; color:var(--color-accent-200);">
+      <p style="margin:0 0 18px;">Department of Materials Science and Physical Chemistry<br>Faculty of Chemistry, University of Barcelona<br>Martí i Franquès 1, 08028 Barcelona, Spain</p>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <a href="https://www.ub.edu/in2ub/grup-de-recerca/self-organized-complexity-and-self-assembling-materials-socsam/" style="color:#fff;">SOCSAM at IN2UB ↗</a>
+        <a href="https://scholar.google.com/citations?user=v1GzFnMAAAAJ&amp;hl=en" style="color:#fff;">Google Scholar ↗</a>
+        <a href="https://orcid.org/0000-0002-7050-4672" style="color:#fff;">ORCID 0000-0002-7050-4672 ↗</a>
+      </div>
+    </div>
+  </div>
+  <p style="margin:24px 0 0; font-size:13px; color:var(--color-neutral-600);">© 2026 Pau Guillamat · Images and movies from the author’s publications in Science (2026) and Nature Materials (2022).</p>
+</section>
+
+</main>
+
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLb }}" style="position:fixed; inset:0; z-index:50; background:color-mix(in srgb, var(--color-accent-900) 94%, transparent); display:grid; place-items:center; padding:32px; cursor:zoom-out;">
+    <figure style="margin:0; max-width:min(1100px, 92vw); display:flex; flex-direction:column; gap:12px;">
+      <sc-if value="{{ lb.isVideo }}" hint-placeholder-val="{{ false }}">
+        <video src="{{ lb.src }}" data-auto="1" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" controls="{{ true }}" style="display:block; max-width:100%; max-height:80vh; margin:0 auto; background:#000;"></video>
+      </sc-if>
+      <sc-if value="{{ lb.isImg }}" hint-placeholder-val="{{ true }}">
+        <img src="{{ lb.src }}" alt="{{ lb.cap }}" style="display:block; max-width:100%; max-height:80vh; margin:0 auto; background:#fff;">
+      </sc-if>
+      <figcaption style="color:#fff; font-size:15px; text-align:center;">{{ lb.cap }}</figcaption>
+    </figure>
+    <button onClick="{{ closeLb }}" aria-label="Close" style="position:fixed; top:18px; right:22px; appearance:none; background:none; border:1px solid var(--color-accent-500); color:#fff; font-size:20px; width:44px; height:44px; cursor:pointer;">×</button>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pubDefault&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;all&quot;,&quot;first&quot;],&quot;default&quot;:&quot;all&quot;,&quot;tsType&quot;:&quot;'all'|'first'&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;autoplayMovies&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;showOutside&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 'shaping', role: null, theme: 'all', lb: null };
+
+  componentDidMount() {
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ lb: null }); };
+    window.addEventListener('keydown', this.onKey);
+    this.kick();
+  }
+  componentDidUpdate() { this.kick(); }
+  componentWillUnmount() { window.removeEventListener('keydown', this.onKey); }
+  kick() {
+    const auto = this.props.autoplayMovies ?? true;
+    document.querySelectorAll('video[data-auto]').forEach(v => {
+      v.muted = true;
+      if (auto) { const p = v.play(); if (p && p.catch) p.catch(() => {}); } else v.pause();
+    });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const role = s.role ?? (this.props.pubDefault ?? 'all');
+    const D = (d) => 'https://doi.org/' + d;
+    const M = (f) => 'assets/media/' + f;
+    const open = (it) => () => this.setState({ lb: it });
+
+    const expertise = ['Soft matter', 'Liquid crystals', 'Active gels and nematic tissues', 'Cell biology', 'Micropatterning and microfabrication', 'Advanced microscopy', 'Image analysis']
+      .map((label, i) => ({ n: String(i + 1).padStart(2, '0'), label }));
+
+    const themes = [
+      { n: 'Theme 01', title: 'Cellular nematics and tissue morphogenesis', body: 'A confluent monolayer of elongated cells has a director field, and that field carries defects. Integer (+1) defects gather active stresses, pull the monolayer out of plane and produce reproducible three-dimensional structures. Prescribed nematic order can programme how a tissue folds.',
+        papers: [{ label: 'Science 2026', href: D('10.1126/science.adz9174') }, { label: 'Nat. Mater. 2022', href: D('10.1038/s41563-022-01194-5') }, { label: 'PRL 2021', href: D('10.1103/PhysRevLett.126.028101') }] },
+      { n: 'Theme 02', title: 'Control of active nematics with soft interfaces', body: 'Microtubule–kinesin gels self-organise into active turbulence. Against a passive liquid crystal, a surfactant monolayer or a droplet interface, the direction of active flow can be set from outside with a magnetic field, a surface pattern or curvature.',
+        papers: [{ label: 'PNAS 2016', href: D('10.1073/pnas.1600339113') }, { label: 'Nat. Commun. 2017', href: D('10.1038/s41467-017-00617-1') }, { label: 'Sci. Adv. 2018', href: D('10.1126/sciadv.aao1470') }, { label: 'PNAS 2025', href: D('10.1073/pnas.2427103122') }] },
+      { n: 'Theme 03', title: 'Micropatterning and substrate engineering', body: 'The experiments rest on fabricated surfaces: microfluidic chips with soft interfaces, structured surfactant monolayers switchable by electric fields, DMD-based maskless photopatterning, and micro-patterned PEG hydrogels that guide tissue growth.',
+        papers: [{ label: 'PRE 2014', href: D('10.1103/PhysRevE.89.052510') }, { label: 'Proc. SPIE 2023', href: D('10.1117/12.2646333') }, { label: 'PNAS 2024', href: D('10.1073/pnas.2312494121') }] }
+    ];
+
+    const I = (src, cap, o = {}) => ({ src: M(src), cap, isVideo: !!o.v, isImg: !o.v, ratio: o.r || '1/1', fit: o.fit || 'cover', col: o.wide ? '1 / -1' : 'auto' });
+    const G = {
+      shaping: { label: 'Shaping', paper: 'Science 2026', ref: 'Guidance of cellular nematic elastomers into shape-programmable living surfaces', doi: D('10.1126/science.adz9174'), lede: 'Prescribed nematic order programs how flat cell monolayers fold into three-dimensional shapes.',
+        items: [I('6def.mp4', 'Six programmed defects: the monolayer folds out of plane.', { v: 1 }), I('science-render.jpg', 'Patterned living surfaces folding into cups and saddles.'), I('science-folding-fig.jpg', 'Defect layouts fold the tissue into predicted 3D shapes.', { fit: 'contain' }), I('science-folded-tissue.jpg', 'A folded tissue, fluorescence.'), I('science-mesh.jpg', 'Reconstructed 3D surface of a folded tissue.', { fit: 'contain' }), I('science-ring.jpg', 'Nematic order guided on an annular pattern.'), I('science-ellipses.jpg', 'Cell alignment guided into an array of elliptical patterns.'), I('fibroblast-nematic.jpg', 'Aligned cells around a defect: actin (orange), nuclei (blue).'), I('mdck-turbulent.mp4', 'Turbulent-like flows in an MDCK monolayer.', { v: 1 })] },
+      growth: { label: 'Growth', paper: 'Nature Materials 2022', ref: 'Integer topological defects organize stresses driving tissue morphogenesis', doi: D('10.1038/s41563-022-01194-5'), lede: '+1 defects gather active stresses and drive cells to grow out of plane, from mounds to cylinders.',
+        items: [I('natmater-render.jpg', 'Tissues rising from +1 defects into mounds and cylinders.'), I('natmater-growth-2.jpg', 'From mound to cylinder: protrusions growing at +1 defects (actin; Ki-67 in yellow).'), I('natmater-spiral-aster.gif', 'Spiral and aster +1 defects on a disc.', { fit: 'contain' }), I('natmater-defects-fig.jpg', 'Defects and cell flows in a myoblast monolayer; a +1 defect on a disc.', { fit: 'contain' }), I('natmater-spirals.jpg', 'Spiral flows on arrays of discs: phase contrast and flow speed.', { fit: 'contain' }), I('natmater-growth-1.jpg', 'Mound at a spiral defect: actin, nuclei colour-coded by height, merge.', { r: '7/2', fit: 'contain', wide: 1 })] },
+      fate: { label: 'Fate', paper: 'Nature Materials 2022', ref: 'Integer topological defects organize stresses driving tissue morphogenesis', doi: D('10.1038/s41563-022-01194-5'), lede: 'At the core of +1 defects, myoblasts begin to differentiate: alignment guides fate.',
+        items: [I('natmater-fate.jpg', 'Myosin heavy chain (yellow) appears at the +1 defect core: actin (white), DNA (cyan).')] }
+    };
+    const g = G[s.tab];
+    g.items = g.items.map(it => ({ ...it, open: open(it) }));
+    const tabs = Object.keys(G).map(k => ({ label: G[k].label, select: () => this.setState({ tab: k }), bg: k === s.tab ? 'var(--color-accent)' : 'transparent', fg: k === s.tab ? '#fff' : 'var(--color-text)' }));
+
+    const keyPapers = [
+      { venue: 'Science · 2026', title: 'Guidance of cellular nematic elastomers into shape-programmable living surfaces', authors: 'P. Guillamat, W. Mirza, P. K. Bal, M. Gómez-González, P. Roca-Cusachs, M. Arroyo, X. Trepat', note: 'Science 392, 317–323. Featured in a Science Perspective and Nature Physics News & Views.', img: M('science-render.jpg'), doi: D('10.1126/science.adz9174') },
+      { venue: 'Nature Materials · 2022', title: 'Integer topological defects organize stresses driving tissue morphogenesis', authors: 'P. Guillamat, C. Blanch-Mercader, G. Pernollet, K. Kruse, A. Roux', note: 'Nature Materials 21, 588–597.', img: M('natmater-render.jpg'), doi: D('10.1038/s41563-022-01194-5') }
+    ];
+    const press = [
+      { outlet: 'Science Perspective', what: '“Shaping tissues with defects”, 2026', href: 'https://www.science.org/doi/10.1126/science.aeg5982' },
+      { outlet: 'Nature Physics', what: 'News & Views, “Tissue shape design”, 2026', href: D('10.1038/s41567-026-03312-5') },
+      { outlet: 'Nature Reviews Materials', what: 'Research Highlight on PNAS 2016', href: D('10.1038/natrevmats.2016.43') },
+      { outlet: 'IBEC news', what: 'Living tissues that change shape on demand', href: 'https://ibecbarcelona.eu/scientists-create-living-tissues-capable-of-changing-shape-in-a-programmed-manner/' },
+      { outlet: 'Phys.org', what: 'Shape-shifting tissue from flat cells', href: 'https://phys.org/news/2026-04-scientists-shifting-tissue-cells-flat.html' }
+    ];
+
+    const P = [
+      [2026, '', ', W. Mirza, P. K. Bal, M. Gómez-González, P. Roca-Cusachs, M. Arroyo, X. Trepat', 'Guidance of cellular nematic elastomers into shape-programmable living surfaces', 'Science 392, 317–323', 'first', 'cell', '10.1126/science.adz9174'],
+      [2026, 'D. Pereira-Sousa, ', ', F. Niro, V. Vinarský, S. Fernandes, M. Cassani, S. Pagliari, X. Trepat, M. Rasponi, J. Oliver-De La Cruz, G. Forte', 'Cardiac fibroblast anisotropy is determined by YAP-dependent cellular contractility and ECM production', 'Biomaterials, 124205', 'co', 'cell', null],
+      [2026, 'O. Bantysh, R. Reigada, R. C. V. Coelho, ', ', J. Ignés-Mullol, M. T. da Gama, F. Sagués', 'Spatiotemporal crystallization of an active fluid', 'arXiv:2603.12079 (preprint)', 'preprint', 'active', '10.48550/arXiv.2603.12079', 'https://arxiv.org/pdf/2603.12079'],
+      [2025, 'J. M. García-Arcos, A. Mehidi, J. Sanchez-Velasquez, ', ', C. Tomba, L. Houzet, L. Capolupo, G. D’Angelo, A. Colom, E. Hinde, C. Aumeier, A. Roux', 'Adherent cells sustain membrane tension gradients independently of migration', 'Nature Communications 16, 10539', 'co', 'cell', '10.1038/s41467-025-65571-9', 'https://www.nature.com/articles/s41467-025-65571-9.pdf'],
+      [2025, 'I. Vélez-Cerón, R. C. V. Coelho, ', ', M. Vergés-Vilarrubia, M. T. da Gama, F. Sagués, J. Ignés-Mullol', 'Active nematic pumps', 'PNAS 122, e2427103122', 'co', 'active', '10.1073/pnas.2427103122', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12646212/'],
+      [2024, 'I. Vélez-Cerón, ', ', F. Sagués, J. Ignés-Mullol', 'Probing active nematics with in situ microfabricated elastic inclusions', 'PNAS 121, e2312494121', 'co', 'active', '10.1073/pnas.2312494121'],
+      [2023, 'M. Dedenon, C. A. Dessalles, ', ', A. Roux, K. Kruse, C. Blanch-Mercader', 'Density–polarity coupling in confined active polar films: asters, spirals, and biphasic orientational phases', 'Physical Review Letters 131, 268301', 'co', 'cell', '10.1103/PhysRevLett.131.268301'],
+      [2023, 'I. Vélez-Cerón, ', ', F. Sagués, J. Ignés-Mullol', 'Custom incorporation of DMD-based photolithography and photopatterning techniques in soft condensed matter research', 'Proc. SPIE 12435, 1243507', 'co', 'pattern', '10.1117/12.2646333', 'https://diposit.ub.edu/server/api/core/bitstreams/9fad84bd-d90a-4b4f-b3fb-9cddc4e468b7/content'],
+      [2022, '', ', C. Blanch-Mercader, G. Pernollet, K. Kruse, A. Roux', 'Integer topological defects organize stresses driving tissue morphogenesis', 'Nature Materials 21, 588–597', 'first', 'cell', '10.1038/s41563-022-01194-5'],
+      [2022, 'I. Di Meglio, A. Trushko, ', ', C. Blanch-Mercader, S. Abuhattum, A. Roux', 'Pressure and curvature control of the cell cycle in epithelia growing under spherical confinement', 'Cell Reports 40, 111227', 'co', 'cell', '10.1016/j.celrep.2022.111227'],
+      [2022, 'F. Sagués, ', ', J. Hardoüin, B. Martínez-Prat, J. Ignés-Mullol', 'Features of interfaced and confined experimental active nematics', 'Les Houches Summer School Vol. 112, Oxford University Press (book chapter)', 'chapter', 'active', null],
+      [2021, 'C. Blanch-Mercader, ', ', A. Roux, K. Kruse', 'Quantifying material properties of cell monolayers by analyzing integer topological defects', 'Physical Review Letters 126, 028101', 'co', 'cell', '10.1103/PhysRevLett.126.028101'],
+      [2021, 'C. Blanch-Mercader, ', ', A. Roux, K. Kruse', 'Integer topological defects of cell monolayers: mechanics and flows', 'Physical Review E 103, 012405', 'co', 'cell', '10.1103/PhysRevE.103.012405'],
+      [2019, 'J. Hardoüin, ', ', F. Sagués, J. Ignés-Mullol', 'Dynamics of ring disclinations driven by active nematic shells', 'Frontiers in Physics 7, 165', 'co', 'active', '10.3389/fphy.2019.00165', 'https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2019.00165/pdf'],
+      [2018, '', ', Ž. Kos, J. Hardoüin, J. Ignés-Mullol, M. Ravnik, F. Sagués', 'Active nematic emulsions', 'Science Advances 4, eaao1470', 'first', 'active', '10.1126/sciadv.aao1470', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5938235/'],
+      [2017, '', ', J. Hardoüin, B. Martínez-Prat, J. Ignés-Mullol, F. Sagués', 'Control of active turbulence through addressable soft interfaces', 'Journal of Physics: Condensed Matter 29, 504003', 'first', 'active', '10.1088/1361-648X/aa99c8'],
+      [2017, '', ', J. Ignés-Mullol, F. Sagués', 'Taming active turbulence with patterned soft interfaces', 'Nature Communications 8, 564', 'first', 'active', '10.1038/s41467-017-00617-1'],
+      [2017, '', ', J. Ignés-Mullol, F. Sagués', 'Control of active nematics with passive liquid crystals', 'Molecular Crystals and Liquid Crystals 646, 226–234', 'first', 'active', '10.1080/15421406.2017.1288007'],
+      [2016, '', ', J. Ignés-Mullol, F. Sagués', 'Control of active liquid crystals with a magnetic field', 'PNAS 113, 5498–5502', 'first', 'active', '10.1073/pnas.1600339113', 'https://www.pnas.org/content/113/20/5498.full.pdf'],
+      [2016, '', ', J. Ignés-Mullol, S. Shankar, M. C. Marchetti, F. Sagués', 'Probing the shear viscosity of an active nematic film', 'Physical Review E 94, 060602', 'first', 'active', '10.1103/PhysRevE.94.060602'],
+      [2015, '', ', J. Ignés-Mullol, J. Claret, F. Sagués', 'Patterning of liquid crystals with structured monolayers', 'Macromolecular Symposia 357, 206–209', 'first', 'pattern', '10.1002/masy.201400273'],
+      [2014, '', ', F. Sagués, J. Ignés-Mullol', 'Electric-field modulation of liquid crystal structures in contact with structured surfactant monolayers', 'Physical Review E 89, 052510', 'first', 'pattern', '10.1103/PhysRevE.89.052510'],
+      [2012, '', ', M. Cortés, E. Vallés, E. Gómez', 'Electrodeposited CoPt films from a deep eutectic solvent', 'Surface and Coatings Technology 206, 4439–4448', 'first', 'pattern', '10.1016/j.surfcoat.2012.04.093']
+    ];
+    const roleLabel = { first: 'First author', co: 'Co-author', preprint: 'Preprint', chapter: 'Book chapter' };
+    const all = P.map(([year, a1, a2, t, v, r, th, doi, oa]) => ({ year, a1, a2, t, v, r, th, role: roleLabel[r], href: doi ? D(doi) : 'https://scholar.google.com/citations?user=v1GzFnMAAAAJ&hl=en', oa: oa || '', hasOa: !!oa }));
+    const pubs = all.filter(p => (role === 'all' || p.r === 'first') && (s.theme === 'all' || p.th === s.theme));
+    const fdef = [['all', 'All', 'role'], ['first', 'First author', 'role'], ['cell', 'Cellular nematics', 'theme'], ['active', 'Active nematics', 'theme'], ['pattern', 'Micropatterning', 'theme']];
+    const filters = fdef.map(([k, label, kind]) => {
+      const on = kind === 'role' ? (k === role && (k !== 'all' || s.theme === 'all')) : s.theme === k;
+      return { label, bg: on ? 'var(--color-accent-900)' : 'transparent', fg: on ? '#fff' : 'var(--color-text)', bd: on ? 'var(--color-accent-900)' : 'var(--color-divider)',
+        select: () => kind === 'role' ? this.setState(k === 'all' ? { role: 'all', theme: 'all' } : { role: 'first' }) : this.setState({ theme: s.theme === k ? 'all' : k }) };
+    });
+
+    const positions = [
+      { when: 'Now', what: 'Tenure-track Lecturer; lead, Living Nematic Matter', where: 'Dept. of Materials Science and Physical Chemistry, University of Barcelona · SOCSAM, IN2UB' },
+      { when: '2021–', what: 'Postdoctoral researcher, MSCA fellow', where: 'IBEC Barcelona, Integrative Cell and Tissue Dynamics (X. Trepat)' },
+      { when: '2024', what: 'MSCA secondment', where: 'IINS, University of Bordeaux: micropatterning of PEG hydrogels (V. Studer)' },
+      { when: '2017–2021', what: 'Postdoctoral researcher, HFSP fellow', where: 'University of Geneva, Dept. of Biochemistry (A. Roux)' },
+      { when: '2014', what: 'Research internship', where: 'Brandeis University: synthetic active gels (Z. Dogic)' },
+      { when: '2013–2017', what: 'PhD, Nanoscience and Nanotechnology', where: 'University of Barcelona (J. Ignés-Mullol, F. Sagués)' }
+    ];
+    const grants = [
+      { logo: 'assets/logos/msca.webp', name: 'Marie Skłodowska-Curie Postdoctoral Fellowship', funder: 'European Commission', year: '2022' },
+      { logo: 'assets/logos/beatriu-de-pinos.png', name: 'Beatriu de Pinós Postdoctoral Fellowship', funder: 'AGAUR', year: '2022 · awarded, declined' },
+      { logo: 'assets/logos/hfsp.jpg', name: 'Cross-disciplinary Postdoctoral Fellowship', funder: 'Human Frontier Science Program', year: '2018' },
+      { logo: 'assets/logos/agaur.jpg', name: 'FI-DGR Predoctoral Fellowship', funder: 'AGAUR', year: '2014' }
+    ];
+
+    return {
+      expertise, themes, tabs, g, keyPapers, press, filters, pubs, positions, grants,
+      pubCount: pubs.length === all.length ? String(all.length) : pubs.length + ' of ' + all.length,
+      showOutside: this.props.showOutside ?? true,
+      lb: s.lb || {}, lbOpen: !!s.lb,
+      closeLb: (e) => { if (e) e.stopPropagation(); this.setState({ lb: null }); },
+      openBanner: () => this.setState({ lb: { src: M('nemacells.jpg'), cap: 'Living nematic order: a dense cell monolayer aligns like a liquid crystal and develops topological defects.', isImg: true } })
+    };
+  }
+}
+</script>
+</body>
+</html>
