@@ -8,8 +8,8 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="_ds/industry-ac0a8d54-d33e-499c-a60a-022da150d9a1/styles.css">
-<script src="_ds/industry-ac0a8d54-d33e-499c-a60a-022da150d9a1/_ds_bundle.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="_ds_bundle.js"></script>
 <title>Pau Guillamat · Living Nematic Matter</title>
 <style>
   html{scroll-behavior:smooth; scroll-padding-top:72px;}
@@ -32,7 +32,7 @@
       <a href="#career" style="color:var(--color-text);">Career</a>
       <a href="#contact" style="color:var(--color-text);">Contact</a>
     </div>
-    <a href="#join" class="btn btn-primary" style="text-decoration:none;">Join the lab</a>
+    <a href="#join" class="btn btn-primary" style="text-decoration:none; white-space:nowrap; flex-shrink:0;">Join the lab</a>
   </div>
 </nav>
 
@@ -51,7 +51,7 @@
     <figure style="margin:0;">
       <div class="blueprint" style="border-color:var(--color-accent-700); padding:8px; color:var(--color-accent-400);">
         <i class="corner tl" style="color:var(--color-accent-400);"></i><i class="corner tr" style="color:var(--color-accent-400);"></i><i class="corner bl" style="color:var(--color-accent-400);"></i><i class="corner br" style="color:var(--color-accent-400);"></i>
-        <video src="assets/media/4def.mp4" data-auto="1" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; background:#000;"></video>
+        <video src="4def.mp4" data-auto="1" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; background:#000;"></video>
       </div>
       <figcaption style="margin-top:14px; display:grid; grid-template-columns:auto 1fr; gap:14px; font-size:14px; line-height:1.5; color:var(--color-accent-200);">
         <span style="font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-accent-300); padding-top:2px;">Science 2026</span>
@@ -105,7 +105,7 @@
   <figure style="margin:0 0 56px;">
     <div class="blueprint" style="padding:6px; cursor:zoom-in;" onClick="{{ openBanner }}">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="assets/media/nemacells.jpg" alt="Cell monolayer aligned like a nematic liquid crystal" style="display:block; width:100%; aspect-ratio:21/9; object-fit:cover; background:#000;">
+      <img src="nemacells.jpg" alt="Cell monolayer aligned like a nematic liquid crystal" style="display:block; width:100%; aspect-ratio:21/9; object-fit:cover; background:#000;">
     </div>
     <figcaption style="margin-top:10px; font-size:14px; color:var(--color-neutral-700);">Living nematic order: a dense cell monolayer aligns like a liquid crystal and develops topological defects.</figcaption>
   </figure>
@@ -243,11 +243,11 @@
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:28px; align-items:end;">
     <h2 style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:clamp(28px, 3.4vw, 38px); line-height:1.15; text-wrap:pretty;">In my free time I head to the mountains to climb and run, and to the coast to kitesurf.</h2>
     <figure style="margin:0;">
-      <div class="blueprint duotone" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/media/free-mountains.jpg" alt="On a glacier in the Alps" loading="lazy" style="display:block; width:100%; aspect-ratio:3/2; object-fit:cover;"></div>
+      <div class="blueprint duotone" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="free-mountains.jpg" alt="On a glacier in the Alps" loading="lazy" style="display:block; width:100%; aspect-ratio:3/2; object-fit:cover;"></div>
       <figcaption style="margin-top:8px; font-size:13.5px; color:var(--color-neutral-700);">On a glacier in the Alps.</figcaption>
     </figure>
     <figure style="margin:0;">
-      <div class="blueprint duotone" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/media/free-kitesurf.jpg" alt="Kitesurfing in Tanzania" loading="lazy" style="display:block; width:100%; aspect-ratio:3/2; object-fit:cover;"></div>
+      <div class="blueprint duotone" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="free-kitesurf.jpg" alt="Kitesurfing in Tanzania" loading="lazy" style="display:block; width:100%; aspect-ratio:3/2; object-fit:cover;"></div>
       <figcaption style="margin-top:8px; font-size:13.5px; color:var(--color-neutral-700);">Kitesurfing in Tanzania.</figcaption>
     </figure>
   </div>
@@ -316,7 +316,7 @@ class Component extends DCLogic {
     const s = this.state;
     const role = s.role ?? (this.props.pubDefault ?? 'all');
     const D = (d) => 'https://doi.org/' + d;
-    const M = (f) => 'assets/media/' + f;
+    const M = (f) => '' + f;
     const open = (it) => () => this.setState({ lb: it });
 
     const expertise = ['Soft matter', 'Liquid crystals', 'Active gels and nematic tissues', 'Cell biology', 'Micropatterning and microfabrication', 'Advanced microscopy', 'Image analysis']
@@ -400,10 +400,10 @@ class Component extends DCLogic {
       { when: '2013–2017', what: 'PhD, Nanoscience and Nanotechnology', where: 'University of Barcelona (J. Ignés-Mullol, F. Sagués)' }
     ];
     const grants = [
-      { logo: 'assets/logos/msca.webp', name: 'Marie Skłodowska-Curie Postdoctoral Fellowship', funder: 'European Commission', year: '2022' },
-      { logo: 'assets/logos/beatriu-de-pinos.png', name: 'Beatriu de Pinós Postdoctoral Fellowship', funder: 'AGAUR', year: '2022 · awarded, declined' },
-      { logo: 'assets/logos/hfsp.jpg', name: 'Cross-disciplinary Postdoctoral Fellowship', funder: 'Human Frontier Science Program', year: '2018' },
-      { logo: 'assets/logos/agaur.jpg', name: 'FI-DGR Predoctoral Fellowship', funder: 'AGAUR', year: '2014' }
+      { logo: 'msca.webp', name: 'Marie Skłodowska-Curie Postdoctoral Fellowship', funder: 'European Commission', year: '2022' },
+      { logo: 'beatriu-de-pinos.png', name: 'Beatriu de Pinós Postdoctoral Fellowship', funder: 'AGAUR', year: '2022 · awarded, declined' },
+      { logo: 'hfsp.jpg', name: 'Cross-disciplinary Postdoctoral Fellowship', funder: 'Human Frontier Science Program', year: '2018' },
+      { logo: 'agaur.jpg', name: 'FI-DGR Predoctoral Fellowship', funder: 'AGAUR', year: '2014' }
     ];
 
     return {
