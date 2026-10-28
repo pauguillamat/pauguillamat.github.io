@@ -77,9 +77,9 @@
     <span class="tag tag-accent" style="font-size:12px; letter-spacing:.1em; text-transform:uppercase;">Open positions</span>
     <div style="flex:1 1 420px;">
       <p style="margin:0 0 2px; font-family:var(--font-heading); font-weight:600; font-size:24px; line-height:1.2;">Open to applications from prospective PhD students and postdocs.</p>
-      <p style="margin:0; font-size:15px; color:var(--color-neutral-700);">Happy to co-write fellowship proposals with strong candidates (MSCA, HFSP, Beatriu de Pinós, la Caixa, FI-AGAUR or equivalent). Send a CV and a short note on what interests you.</p>
+      <p style="margin:0; font-size:15px; color:var(--color-neutral-700);">Happy to co-write fellowship proposals with strong candidates (MSCA, Beatriu de Pinós, la Caixa, FI-AGAUR or equivalent). Use the contact form and tell me what interests you.</p>
     </div>
-    <a href="mailto:pauguillamat@ub.edu?subject=Joining%20Living%20Nematic%20Matter" class="btn btn-primary" style="text-decoration:none; padding:11px 20px; font-size:16px;">Write to pauguillamat@ub.edu</a>
+    <a href="#contact" onClick="{{ pickPhd }}" class="btn btn-primary" style="text-decoration:none; padding:11px 20px; font-size:16px; white-space:nowrap;">Get in touch</a>
   </div>
 </section>
 
@@ -92,9 +92,9 @@
       <div class="blueprint" style="padding:5px;"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="pau-guillamat.jpg" alt="Pau Guillamat" style="display:block; width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 30%;"></div>
       <h2 style="margin:0; font-family:var(--font-heading); font-weight:600; font-size:clamp(28px, 3.6vw, 42px); line-height:1.05;">A materials chemist between soft matter physics and cell biology</h2>
     </div>
-    <p style="margin:0 0 14px; text-wrap:pretty;">I studied chemistry and applied materials chemistry at the University of Barcelona and completed my PhD in Nanoscience and Nanotechnology there in 2017 (excellent cum laude) with Jordi Ignés-Mullol and Francesc Sagués. My thesis showed how passive liquid crystals and structured interfaces steer the flows of cytoskeletal active gels (PNAS, Nature Communications, Science Advances).</p>
-    <p style="margin:0 0 14px; text-wrap:pretty;">As an HFSP cross-disciplinary fellow with Aurélien Roux at the University of Geneva (2017–2021), I showed that integer topological defects organise the stresses that drive tissue morphogenesis (Nature Materials, 2022). With a Marie Skłodowska-Curie fellowship in Xavier Trepat’s lab at IBEC, I developed substrates that guide cellular nematic order into shape-programmable living surfaces (Science, 2026).</p>
-    <p style="margin:0; text-wrap:pretty;">I now teach at the <a href="https://www.ub.edu/">University of Barcelona</a> and lead the Living Nematic Matter line of <a href="http://www.ub.edu/socsam/cms/">Self-Organized Complexity and Self-Assembly Materials (SOC&amp;SAM)</a>, at the University of Barcelona and the <a href="https://www.ub.edu/in2ub/">Institute of Nanoscience and Nanotechnology (IN2UB)</a>.</p>
+    <p style="margin:0 0 14px; text-wrap:pretty;">Pau Guillamat studied chemistry and applied materials chemistry at the University of Barcelona and completed his PhD in Nanoscience and Nanotechnology there in 2017 (excellent cum laude) with Jordi Ignés-Mullol and Francesc Sagués. His thesis showed how passive liquid crystals and structured interfaces steer the flows of cytoskeletal active gels (PNAS, Nature Communications, Science Advances).</p>
+    <p style="margin:0 0 14px; text-wrap:pretty;">As an HFSP cross-disciplinary fellow with Aurélien Roux at the University of Geneva (2017–2021), he showed that integer topological defects organise the stresses that drive tissue morphogenesis (Nature Materials, 2022). With a Marie Skłodowska-Curie fellowship in Xavier Trepat’s lab at IBEC, he developed substrates that guide cellular nematic order into shape-programmable living surfaces (Science, 2026).</p>
+    <p style="margin:0; text-wrap:pretty;">He now teaches at the <a href="https://www.ub.edu/">University of Barcelona</a> and leads the Living Nematic Matter line of <a href="http://www.ub.edu/socsam/cms/">Self-Organized Complexity and Self-Assembly Materials (SOC&amp;SAM)</a>, at the University of Barcelona and the <a href="https://www.ub.edu/in2ub/">Institute of Nanoscience and Nanotechnology (IN2UB)</a>.</p>
   </div>
   <div>
     <p style="margin:0 0 14px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-700);">Expertise</p>
@@ -256,8 +256,32 @@
     <div>
       <p style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-300);">Contact</p>
       <h2 style="margin:0 0 16px; font-family:var(--font-heading); font-weight:600; font-size:clamp(30px, 4vw, 44px); line-height:1.05; color:#fff;">Interested in joining or collaborating?</h2>
-      <p style="margin:0 0 24px; color:var(--color-accent-200);">Open to applications from prospective PhD students and postdocs, and happy to co-write fellowship proposals with strong candidates.</p>
-      <a href="mailto:pauguillamat@ub.edu" class="btn btn-primary" style="text-decoration:none; padding:11px 20px; font-size:16px;">pauguillamat@ub.edu</a>
+      <p style="margin:0 0 26px; color:var(--color-accent-200);">Open to applications from prospective PhD students and postdocs, and happy to co-write fellowship proposals with strong candidates.</p>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div class="blueprint" style="padding:22px; border-color:var(--color-accent-500);"><i class="corner tl" style="color:var(--color-accent-300);"></i><i class="corner tr" style="color:var(--color-accent-300);"></i><i class="corner bl" style="color:var(--color-accent-300);"></i><i class="corner br" style="color:var(--color-accent-300);"></i>
+          <p style="margin:0 0 4px; font-family:var(--font-heading); font-weight:600; font-size:24px; color:#fff;">Thank you, message sent.</p>
+          <p style="margin:0; color:var(--color-accent-200);">I will get back to you as soon as I can.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{ showForm }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ submit }}" style="display:flex; flex-direction:column; gap:16px;">
+        <div role="radiogroup" aria-label="I am writing about" style="display:flex; flex-wrap:wrap; border:1px solid var(--color-accent-600);">
+          <sc-for list="{{ topics }}" as="tp" hint-placeholder-count="4">
+            <button type="button" onClick="{{ tp.select }}" style="flex:1 1 auto; appearance:none; border:0; border-right:1px solid var(--color-accent-600); padding:9px 14px; font-family:var(--font-body); font-size:14px; cursor:pointer; background:{{ tp.bg }}; color:#fff;">{{ tp.label }}</button>
+          </sc-for>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:16px;">
+          <label style="display:flex; flex-direction:column; gap:6px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-accent-300);">Name<input name="name" required="{{ true }}" autoComplete="name" style="width:100%; box-sizing:border-box; padding:10px 12px; background:color-mix(in srgb, #fff 6%, transparent); border:1px solid var(--color-accent-600); color:#fff; font-family:var(--font-body); font-size:15px; border-radius:0;" style-focus="outline:2px solid var(--color-accent-300); outline-offset:1px;"></label>
+          <label style="display:flex; flex-direction:column; gap:6px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-accent-300);">Email<input name="email" type="email" required="{{ true }}" autoComplete="email" style="width:100%; box-sizing:border-box; padding:10px 12px; background:color-mix(in srgb, #fff 6%, transparent); border:1px solid var(--color-accent-600); color:#fff; font-family:var(--font-body); font-size:15px; border-radius:0;" style-focus="outline:2px solid var(--color-accent-300); outline-offset:1px;"></label>
+        </div>
+        <label style="display:flex; flex-direction:column; gap:6px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-accent-300);">Message<textarea name="message" required="{{ true }}" rows="5" placeholder="A few lines on your background and what interests you. Links to a CV are welcome." style="width:100%; box-sizing:border-box; padding:10px 12px; background:color-mix(in srgb, #fff 6%, transparent); border:1px solid var(--color-accent-600); color:#fff; font-family:var(--font-body); font-size:15px; border-radius:0; resize:vertical; line-height:1.5;" style-focus="outline:2px solid var(--color-accent-300); outline-offset:1px;"></textarea></label>
+        <input type="text" name="_honey" tabIndex="-1" autoComplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
+        <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+          <button type="submit" disabled="{{ sending }}" class="btn btn-primary" style="padding:11px 22px; font-size:16px;">{{ submitLabel }}</button>
+          <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}"><span style="font-size:14px; color:#fff;">Could not send. Please try again in a moment.</span></sc-if>
+        </div>
+      </form>
+      </sc-if>
     </div>
     <div style="font-size:15px; line-height:1.7; color:var(--color-accent-200);">
       <p style="margin:0 0 18px;">Department of Materials Science and Physical Chemistry<br>Faculty of Chemistry, University of Barcelona<br>Martí i Franquès 1, 08028 Barcelona, Spain</p>
@@ -294,7 +318,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;pubDefault&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;all&quot;,&quot;first&quot;],&quot;default&quot;:&quot;all&quot;,&quot;tsType&quot;:&quot;'all'|'first'&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;autoplayMovies&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behaviour&quot;}}">
 class Component extends DCLogic {
-  state = { tab: 'shaping', role: null, theme: 'all', lb: null };
+  state = { tab: 'shaping', role: null, theme: 'all', lb: null, topic: 'PhD', send: 'idle' };
 
   componentDidMount() {
     this.onKey = (e) => { if (e.key === 'Escape') this.setState({ lb: null }); };
@@ -409,6 +433,20 @@ class Component extends DCLogic {
       expertise, themes, tabs, g, keyPapers, press, filters, pubs, positions, grants,
       pubCount: pubs.length === all.length ? String(all.length) : pubs.length + ' of ' + all.length,
       lb: s.lb || {}, lbOpen: !!s.lb,
+      topics: ['PhD', 'Postdoc', 'Collaboration', 'Other'].map(t => ({ label: t, bg: t === s.topic ? 'var(--color-accent)' : 'transparent', select: () => this.setState({ topic: t }) })),
+      pickPhd: () => this.setState({ topic: 'PhD' }),
+      sent: s.send === 'sent', showForm: s.send !== 'sent', sending: s.send === 'sending', hasError: s.send === 'error',
+      submitLabel: s.send === 'sending' ? 'Sending…' : 'Send message',
+      submit: (e) => {
+        e.preventDefault();
+        const fd = new FormData(e.target);
+        if (fd.get('_honey')) return;
+        this.setState({ send: 'sending' });
+        fetch('https://formsubmit.co/ajax/pauguillamat@ub.edu', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ name: fd.get('name'), email: fd.get('email'), topic: s.topic, message: fd.get('message'), _subject: 'Website contact: ' + s.topic + ' (' + fd.get('name') + ')', _replyto: fd.get('email'), _template: 'table', _captcha: 'false' }) })
+          .then(r => r.json()).then(j => this.setState({ send: (j.success === true || j.success === 'true') ? 'sent' : 'error' }))
+          .catch(() => this.setState({ send: 'error' }));
+      },
       closeLb: (e) => { if (e) e.stopPropagation(); this.setState({ lb: null }); },
       openBanner: () => this.setState({ lb: { src: M('nemacells.jpg'), cap: 'Living nematic order: a dense cell monolayer aligns like a liquid crystal and develops topological defects.', isImg: true } })
     };
