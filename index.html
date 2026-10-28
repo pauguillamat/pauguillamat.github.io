@@ -407,7 +407,7 @@ class Component extends DCLogic {
     const roleLabel = { first: 'First author', co: 'Co-author', preprint: 'Preprint', chapter: 'Book chapter' };
     const all = P.map(([year, a1, a2, t, v, r, th, doi, oa]) => ({ year, a1, a2, t, v, r, th, role: roleLabel[r], href: doi ? D(doi) : 'https://scholar.google.com/citations?user=v1GzFnMAAAAJ&hl=en', oa: oa || '', hasOa: !!oa }));
     const pubs = all.filter(p => (role === 'all' || p.r === 'first') && (s.theme === 'all' || p.th === s.theme));
-    const fdef = [['all', 'All', 'role'], ['first', 'First author', 'role'], ['cell', 'Cellular nematics', 'theme'], ['active', 'Active nematics', 'theme'],['LCs', 'Liquid Crystals','theme']];
+    const fdef = [['all', 'All', 'role'], ['first', 'First author', 'role'], ['cell', 'Cellular nematics', 'theme'], ['active', 'Active nematic gels', 'theme'],['LCs', 'Liquid Crystals','theme']];
     const filters = fdef.map(([k, label, kind]) => {
       const on = kind === 'role' ? (k === role && (k !== 'all' || s.theme === 'all')) : s.theme === k;
       return { label, bg: on ? 'var(--color-accent-900)' : 'transparent', fg: on ? '#fff' : 'var(--color-text)', bd: on ? 'var(--color-accent-900)' : 'var(--color-divider)',
