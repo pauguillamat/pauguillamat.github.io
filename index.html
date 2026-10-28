@@ -400,14 +400,14 @@ class Component extends DCLogic {
       [2017, '', ', J. Ignés-Mullol, F. Sagués', 'Control of active nematics with passive liquid crystals', 'Molecular Crystals and Liquid Crystals 646, 226–234', 'first', 'active', '10.1080/15421406.2017.1288007'],
       [2016, '', ', J. Ignés-Mullol, F. Sagués', 'Control of active liquid crystals with a magnetic field', 'PNAS 113, 5498–5502', 'first', 'active', '10.1073/pnas.1600339113', 'https://www.pnas.org/content/113/20/5498.full.pdf'],
       [2016, '', ', J. Ignés-Mullol, S. Shankar, M. C. Marchetti, F. Sagués', 'Probing the shear viscosity of an active nematic film', 'Physical Review E 94, 060602', 'first', 'active', '10.1103/PhysRevE.94.060602'],
-      [2015, '', ', J. Ignés-Mullol, J. Claret, F. Sagués', 'Patterning of liquid crystals with structured monolayers', 'Macromolecular Symposia 357, 206–209', 'first', 'pattern', '10.1002/masy.201400273'],
-      [2014, '', ', F. Sagués, J. Ignés-Mullol', 'Electric-field modulation of liquid crystal structures in contact with structured surfactant monolayers', 'Physical Review E 89, 052510', 'first', 'pattern', '10.1103/PhysRevE.89.052510'],
-      [2012, '', ', M. Cortés, E. Vallés, E. Gómez', 'Electrodeposited CoPt films from a deep eutectic solvent', 'Surface and Coatings Technology 206, 4439–4448', 'first', '10.1016/j.surfcoat.2012.04.093']
+      [2015, '', ', J. Ignés-Mullol, J. Claret, F. Sagués', 'Patterning of liquid crystals with structured monolayers', 'Macromolecular Symposia 357, 206–209', 'first', 'LCs', '10.1002/masy.201400273'],
+      [2014, '', ', F. Sagués, J. Ignés-Mullol', 'Electric-field modulation of liquid crystal structures in contact with structured surfactant monolayers', 'Physical Review E 89, 052510', 'first','LCs', '10.1103/PhysRevE.89.052510'],
+      [2012, '', ', M. Cortés, E. Vallés, E. Gómez', 'Electrodeposited CoPt films from a deep eutectic solvent', 'Surface and Coatings Technology 206, 4439–4448', '10.1016/j.surfcoat.2012.04.093']
     ];
     const roleLabel = { first: 'First author', co: 'Co-author', preprint: 'Preprint', chapter: 'Book chapter' };
     const all = P.map(([year, a1, a2, t, v, r, th, doi, oa]) => ({ year, a1, a2, t, v, r, th, role: roleLabel[r], href: doi ? D(doi) : 'https://scholar.google.com/citations?user=v1GzFnMAAAAJ&hl=en', oa: oa || '', hasOa: !!oa }));
     const pubs = all.filter(p => (role === 'all' || p.r === 'first') && (s.theme === 'all' || p.th === s.theme));
-    const fdef = [['all', 'All', 'role'], ['first', 'First author', 'role'], ['cell', 'Cellular nematics', 'theme'], ['active', 'Active nematics', 'theme']];
+    const fdef = [['all', 'All', 'role'], ['first', 'First author', 'role'], ['cell', 'Cellular nematics', 'theme'], ['active', 'Active nematics', 'theme'],['LCs', 'Liquid Crystals','theme']];
     const filters = fdef.map(([k, label, kind]) => {
       const on = kind === 'role' ? (k === role && (k !== 'all' || s.theme === 'all')) : s.theme === k;
       return { label, bg: on ? 'var(--color-accent-900)' : 'transparent', fg: on ? '#fff' : 'var(--color-text)', bd: on ? 'var(--color-accent-900)' : 'var(--color-divider)',
